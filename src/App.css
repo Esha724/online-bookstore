@@ -1,0 +1,115 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.containers {
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  /* margin: 0 auto; */
+  padding: 20px;
+  padding-bottom: 350px;
+  padding-right: 500px;
+  background-image: url(https://images.unsplash.com/photo-1566415609180-96eaa27bf3f8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80);
+  /* background-repeat: no-repeat; */
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.search-form,
+.filter-form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="number"] {
+  flex: 1;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.book-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.book-item {
+  background-color: #f9f9f9;
+  padding: 20px;
+  text-align: center;
+}
+
+.book-title {
+  margin-bottom: 10px;
+}
+
+.book-image img {
+  width: 150px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.book-price {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.book-rating {
+  margin-bottom: 10px;
+}
+
+.book-genre,
+.book-publication-date {
+  font-style: italic;
+  color: #666;
+}
+
